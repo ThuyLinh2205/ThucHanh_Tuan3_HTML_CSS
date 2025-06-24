@@ -6,21 +6,53 @@
     <title>Document</title>
     <style>
         body  {
+            margin: 0;
+            padding: 0;
             background-color: antiquewhite;
             font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        img {
-            border-radius: 50%;
-        }
+           .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex; 
+      flex-direction: row; 
+      align-items: center;
+      gap: 20px; 
+           }
+     .container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+        
+      .container .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+     @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
     </style>
 </head>
 <body>
-    <p>Nguyen Thuy Linh</p>
-    <p>22-02-2005</p>
-    <img src="myface.jpg" alt="Anh cua toi" width = "200">
-    <p>Sở thích:Học tiếng Anh, nhảy, chơi cầu lông</p>
-    <p>Mô tả ngắn: Life is short but deadline is shorter</p>
-
+    <div class="container">
+    <img src="myface.jpg" alt="Ảnh của tôi">
+    <div class="info">
+      <p><strong>Nguyen Thuy Linh</strong></p>
+      <p>22-02-2005</p>
+      <p><strong>Sở thích:</strong> Học tiếng Anh, nhảy, chơi cầu lông</p>
+      <p><strong>Mô tả ngắn:</strong> Life is short but deadline is shorter</p>
+    </div>
+  </div>
     
 </body>
 </html>
