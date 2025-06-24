@@ -3,15 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cau2</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #fff8e1 ;
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 16px;
+        }
+        li {
+            padding: 16px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+        }
+        li:nth-child(1) {background-color: pink;}
+        li:nth-child(2) {background-color: lightgreen;}
+        li:nth-child(3) {background-color: beige;}
+        li:nth-child(4) {background-color: violet;}
+        </style>
 </head>
 <body>
+
     <h2>Câu 02: Tạo danh sách các môn học yêu thích</h2>
     <ul>
         <li style="background-color: pink; padding: 8px; margin: 6px;">Tiếng Anh</li>
         <li style="background-color: green; padding: 8px; margin: 6px;" >Toán</li>
-        <li style="background-color: beige;padding: 8px; margin: 6px;" >/li>Hệ thống và Công Nghệ Web</li>
-        <li style="background-color: blueviolet;padding: 8px; margin: 6px;" >/li>Văn hóa đa quốc gia</li>
+        <li style="background-color: beige;padding: 8px; margin: 6px;" >Hệ thống và Công Nghệ Web</li>
+        <li style="background-color: blueviolet;padding: 8px; margin: 6px;" >Văn hóa đa quốc gia</li>
     </ul>
 </body>
 </html>
