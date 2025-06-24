@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-  table {
-    border-collapse: collapse;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thời khoá biểu</title>
+  <style>
+    .schedule {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: pink;
+      text-align: center;
+    }
 
-  th, td {
-    border: 1px solid pink;
-    padding: 8px;
-    text-align: center; 
-  }
-</style>
+    .cell {
+      background: white;
+      padding: 10px;
+      border: 1px solid pink;
+    }
+
+    .header {
+      background: #f8bbd0;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <h3>Câu 3: Tạo bảng thời khoá biểu</h3>
-    <table border="1">
-        <tr>
-            <th>Thứ</th>
-            <th>Môn học</th>
-            <th>Giờ học</th>
-            <th>Phòng Học</th>
-        </tr>
-        <tr>
-            <th>Thứ Hai</th>
-            <th>Toán</th>
-            <th>7:00-8:15</th>
-            <th>N5.1</th>
-        </tr>
-        <tr>
-            <th>Thứ Ba</th>
-            <th>Tiếng Anh</th>
-            <th>10:15-11:25</th>
-            <th>V3.10</th>
-        </tr>
-        <tr>
-            <th>Thứ Tư</th>
-            <th>Hệ thống và Công Nghệ Web</th>
-            <th>13:20-17:40</th>
-            <th>H8.02</th>
-        </tr>
-    </table>
+
+  <h3>Câu 3: Tạo bảng thời khoá biểu dùng Grid</h3>
+
+  <div class="schedule">
+    <div class="cell header">Thứ</div>
+    <div class="cell header">Môn</div>
+    <div class="cell header">Giờ</div>
+    <div class="cell header">Phòng</div>
+
+    <div class="cell">Thứ Hai</div>
+    <div class="cell">Toán</div>
+    <div class="cell">7:00–8:15</div>
+    <div class="cell">N5.1</div>
+
+    <div class="cell">Thứ Ba</div>
+    <div class="cell">Tiếng Anh</div>
+    <div class="cell">10:15–11:25</div>
+    <div class="cell">V3.10</div>
+
+    <div class="cell">Thứ Tư</div>
+    <div class="cell">HT & CN Web</div>
+    <div class="cell">13:20–17:40</div>
+    <div class="cell">H8.02</div>
+  </div>
+
 </body>
 </html>
