@@ -1,18 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <style>
-    a:active {
-      text-decoration: underline; 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu liên kết</title>
+  <style>
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 8px 15px;
+      background-color: #f48fb1;
+      color: white;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #ec407a;
+      transform: scale(1.05);
+    }
+
+    h5 {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-    <h5>Tạo liên kết điều hướng đến các trang khác nhau</h5>
-    <p>Trang web mình thường xuyên sử dụng:</p>
-    <a href="https://www.speechace.com/"target="_blank"style="display: block; text-align: center;">Speechace></a>
+
+  <h5>Tạo liên kết điều hướng đến các trang khác nhau</h5>
+  <p style="text-align:center;">Trang web mình thường xuyên sử dụng:</p>
+
+  <div class="menu">
+    <a href="https://www.speechace.com/" target="_blank">Speechace</a>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+  </div>
+
 </body>
 </html>
